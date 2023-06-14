@@ -11,4 +11,10 @@ struct ImagesModel {
     var heroImage: String
     var profileID: String
     var productIDs: [String]
+    
+    init(heroImage: String, profileID: String, productIDs: [String]) {
+        self.heroImage = heroImage
+        self.profileID = profileID
+        self.productIDs = productIDs
+    }
 }

@@ -7,6 +7,12 @@
 
 import Foundation
 
-struct Profile {
+struct ProfileModel {
+    var profileID: String
+    var picture: URL?
     
+    init(profileID: String, picture: URL?) {
+        self.profileID = profileID
+        self.picture = picture
+    }
 }

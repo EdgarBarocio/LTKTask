@@ -18,10 +18,10 @@ class ServiceCalls {
     typealias ServiceResult = (Data) -> Void
     
     /**
-     Service call to get the reverse geocode from a location
+     Service call to fetch all data for the Project
      
      - Parameters:
-        - url: URL for reverse geocoding
+        - url: URL to fetch all data
         - completion: Closure to pass result to View Model
      */
     func getLTKData(url: URL, completion: @escaping ServiceResult) {
