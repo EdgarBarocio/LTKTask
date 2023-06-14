@@ -7,12 +7,16 @@
 
 import Foundation
 
-struct ProfileModel {
+struct ProfileModel: Codable {
     var profileID: String
-    var picture: URL?
+    var picture: String
     
-    init(profileID: String, picture: URL?) {
-        self.profileID = profileID
-        self.picture = picture
+    enum CodingKeys: String, CodingKey {
+        case profileID = "avatar_url"
+        case picture = "id"
     }
+//    init(profileID: String, picture: URL?) {
+//        self.profileID = profileID
+//        self.picture = picture
+//    }
 }
