@@ -9,11 +9,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let flipPageViewModel = FlipPageViewModel()
+    var productPages = [ProductPageView]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        flipPageViewModel.fetchLTKData(serviceURL: Constants.serviceURL)
     }
 
 
+    //private func 
 }
 
