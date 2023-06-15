@@ -1,17 +1,16 @@
 //
-//  ProductPageViewModel.swift
+//  StorefrontCellsWorker.swift
 //  Test App
 //
-//  Created by Edgar Barocio on 6/14/23.
+//  Created by Edgar Barocio on 6/15/23.
 //
 
 import Foundation
 
-class ProductPageViewModel {
-    
+class StorefrontCellsWorker {
     weak var delegate: (ImageDataParsing)?
-    private var serviceCalls = ServiceCalls()
     private let imageCache = NSCache<NSString, NSData>()
+    private var serviceCalls = ServiceCalls()
     
     func fetchImage(imageURL: String) {
         guard let url = URL(string: imageURL) else { return }

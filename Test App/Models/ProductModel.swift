@@ -13,13 +13,8 @@ struct ProductModel: Codable {
     var hyperlink: String
     
     enum CodingKeys: String, CodingKey {
-        case id = "ltk_id"
+        case id = "id"
         case imageURL = "image_url"
         case hyperlink = "hyperlink"
     }
-//    init(id: String, imageURL: String, hyperlink: String) {
-//        self.id = id
-//        self.imageURL = imageURL
-//        self.hyperlink = hyperlink
-//    }
 }

@@ -12,11 +12,7 @@ struct ProfileModel: Codable {
     var picture: String
     
     enum CodingKeys: String, CodingKey {
-        case profileID = "avatar_url"
-        case picture = "id"
+        case profileID = "id"
+        case picture = "avatar_url"
     }
-//    init(profileID: String, picture: URL?) {
-//        self.profileID = profileID
-//        self.picture = picture
-//    }
 }
