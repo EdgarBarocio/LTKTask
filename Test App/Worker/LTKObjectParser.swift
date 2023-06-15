@@ -51,6 +51,10 @@ class LTKObjectParser {
             storeFrontArray.append(storeFront)
         }
         
-        UserDefaults.standard.set(storeFrontArray, forKey: "storefront")
+        
+        let encoder = JSONEncoder()
+        if let encodedObject = try? encoder.encode(storeFrontArray) {
+            UserDefaults.standard.set(encodedObject, forKey: "storefront")
+        }
     }
 }

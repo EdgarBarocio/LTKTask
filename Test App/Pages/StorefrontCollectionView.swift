@@ -10,6 +10,10 @@ import UIKit
 
 class StorefrontCollectionView: UICollectionViewController {
     
+    @IBOutlet weak var heroImageView: UIImageView!
+    
+    private let worker = StorefrontCollectionViewWorker()
+    
     public var profileURL: String?
     public var products: [String]?
     public var hyperLink: [String]?
@@ -17,6 +21,10 @@ class StorefrontCollectionView: UICollectionViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        worker.delegate = self
+        heroImageView.isUserInteractionEnabled = true
+        
+        worker.fetchImage(imageURL: self.heroImage ?? "")
     }
     
     //MARK: CollectionView
@@ -39,6 +47,8 @@ class StorefrontCollectionView: UICollectionViewController {
         } else {
             cell.imageURL = products?[indexPath.row]
         }
+        
+        
 
         return cell
     }
@@ -48,5 +58,12 @@ class StorefrontCollectionView: UICollectionViewController {
             guard let url = URL(string: hyperLink?[indexPath.row] ?? "") else { return }
             UIApplication.shared.open(url)
         }
+    }
+}
+
+extension StorefrontCollectionView: ImageDataParsing {
+    func returnImageData(imageData: Data) {
+        let image = UIImage(data: imageData)
+        heroImageView?.image = image
     }
 }

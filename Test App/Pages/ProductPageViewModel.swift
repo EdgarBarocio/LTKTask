@@ -26,8 +26,5 @@ class ProductPageViewModel {
             
             self.delegate?.returnImageData(imageData: data)
         }
-        
     }
-    
-    
 }

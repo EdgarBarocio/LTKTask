@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct StoreFront {
+struct StoreFront: Codable {
     var profilePictureData: String
     var productImagesData: [String]
     var heroImageData: String

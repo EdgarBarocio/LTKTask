@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+class StorefrontCellsWorker {
+    weak var delegate: (ImageDataParsing)?
+    
+}

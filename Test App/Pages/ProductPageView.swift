@@ -28,14 +28,19 @@ class ProductPageView: UIViewController {
 
     @IBAction func didTapImageView(_ sender: UITapGestureRecognizer) {
         let storefront = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "collectionView") as! StorefrontCollectionView
-        let store = UserDefaults.standard.object(forKey: "storefront") as! [StoreFront]
-        let front = store[self.index] as StoreFront
         
-        storefront.profileURL = front.profilePictureData
-        storefront.products = front.productImagesData
-        storefront.hyperLink = front.hyperLink
-        storefront.heroImage = front.heroImageData
-        
+        if let encodedObject = UserDefaults.standard.data(forKey: "storefront") {
+            let decoder = JSONDecoder()
+            if let decodedObject = try? decoder.decode([StoreFront].self, from: encodedObject) {
+                let front = decodedObject[self.index] as StoreFront
+                
+                storefront.profileURL = front.profilePictureData
+                storefront.products = front.productImagesData
+                storefront.hyperLink = front.hyperLink
+                storefront.heroImage = front.heroImageData
+            }
+        }
+
         self.navigationController?.pushViewController(storefront, animated: true)
     }
 }
