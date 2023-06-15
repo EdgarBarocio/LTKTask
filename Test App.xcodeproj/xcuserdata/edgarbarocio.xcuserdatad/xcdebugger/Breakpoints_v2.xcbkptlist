@@ -7,79 +7,17 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D188A90A-A830-4F4E-B452-83839587EF75"
+            uuid = "FBC70EBC-8787-48D2-9DDB-2959887E97F3"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Test App/Worker/LTKObjectParser.swift"
+            filePath = "Test App/Pages/ProductPageView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "createStorefrontData(data:)"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
+            landmarkName = "didTapImageView(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "D188A90A-A830-4F4E-B452-83839587EF75 - 812274991104266e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Test_App.LTKObjectParser.createStorefrontData(data: Test_App.BaseDataModel) -&gt; ()"
-                  moduleName = "Test App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgarbarocio/LTKTask/Test%20App/Worker/LTKObjectParser.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "2872">
-               </Location>
-               <Location
-                  uuid = "D188A90A-A830-4F4E-B452-83839587EF75 - 812274991104266e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Test_App.LTKObjectParser.createStorefrontData(data: Test_App.BaseDataModel) -&gt; ()"
-                  moduleName = "Test App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgarbarocio/LTKTask/Test%20App/Worker/LTKObjectParser.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "56"
-                  endingLineNumber = "56"
-                  offsetFromSymbolStart = "2828">
-               </Location>
-               <Location
-                  uuid = "D188A90A-A830-4F4E-B452-83839587EF75 - 812274991104268d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Test_App.LTKObjectParser.createStorefrontData(data: Test_App.BaseDataModel) -&gt; ()"
-                  moduleName = "Test App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgarbarocio/LTKTask/Test%20App/Worker/LTKObjectParser.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "2524">
-               </Location>
-               <Location
-                  uuid = "D188A90A-A830-4F4E-B452-83839587EF75 - 812274991104268d"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Test_App.LTKObjectParser.createStorefrontData(data: Test_App.BaseDataModel) -&gt; ()"
-                  moduleName = "Test App"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/edgarbarocio/LTKTask/Test%20App/Worker/LTKObjectParser.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "55"
-                  endingLineNumber = "55"
-                  offsetFromSymbolStart = "2896">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

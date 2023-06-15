@@ -10,5 +10,6 @@ import UIKit
 
 class StorefrontCells: UICollectionViewCell {
     
+    public var imageURL: String?
    
 }

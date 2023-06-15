@@ -51,7 +51,6 @@ class LTKObjectParser {
             storeFrontArray.append(storeFront)
         }
         
-        
-        print(storeFrontArray)
+        UserDefaults.standard.set(storeFrontArray, forKey: "storefront")
     }
 }

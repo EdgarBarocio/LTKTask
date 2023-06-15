@@ -12,6 +12,7 @@ class ProductPageView: UIViewController {
 
     let productPageViewModel = ProductPageViewModel()
     var imageURL:String?
+    var index: Int = 0
     
     @IBOutlet weak var HeroImage: UIImageView!
     
@@ -27,6 +28,13 @@ class ProductPageView: UIViewController {
 
     @IBAction func didTapImageView(_ sender: UITapGestureRecognizer) {
         let storefront = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "collectionView") as! StorefrontCollectionView
+        let store = UserDefaults.standard.object(forKey: "storefront") as! [StoreFront]
+        let front = store[self.index] as StoreFront
+        
+        storefront.profileURL = front.profilePictureData
+        storefront.products = front.productImagesData
+        storefront.hyperLink = front.hyperLink
+        storefront.heroImage = front.heroImageData
         
         self.navigationController?.pushViewController(storefront, animated: true)
     }

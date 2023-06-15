@@ -1,0 +1,8 @@
+//
+//  StorefrontCollectionViewWorker.swift
+//  Test App
+//
+//  Created by Edgar Barocio on 6/15/23.
+//
+
+import Foundation

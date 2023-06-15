@@ -64,10 +64,13 @@ class PageViewController: UIPageViewController, UIPageViewControllerDataSource, 
 extension PageViewController: DataParseResultsDelegate {
     
     func buildViewControllerPages(dataModel: BaseDataModel) {
+        var indexCount = 0
         for ltk in dataModel.ltks {
             let product = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "pageView") as! ProductPageView
             product.imageURL = ltk.heroImage
+            product.index = indexCount
             productPages.append(product)
+            indexCount += 1
             
             if let firstViewController = productPages.first {
                 setViewControllers([firstViewController],
