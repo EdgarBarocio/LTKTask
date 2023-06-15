@@ -87,6 +87,9 @@
                                         </imageView>
                                     </subviews>
                                 </collectionViewCellContentView>
+                                <connections>
+                                    <outlet property="HeroImage" destination="vJp-yj-ueV" id="bae-mH-kPq"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>

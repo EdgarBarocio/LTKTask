@@ -47,8 +47,7 @@ class StorefrontCollectionView: UICollectionViewController {
         } else {
             cell.imageURL = products?[indexPath.row]
         }
-        
-        
+        cell.updateImage()
 
         return cell
     }
