@@ -29,6 +29,8 @@ class FlipPageViewModel {
             let decoded = try decoder.decode(BaseDataModel.self, from: data)
             
             delegate?.buildViewControllerPages(dataModel: decoded)
+            let parser = LTKObjectParser()
+            parser.createStorefrontData(data: decoded)
         } catch {
             print("Failed to decode JSON")
         }

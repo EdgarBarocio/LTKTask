@@ -17,8 +17,18 @@ class ProductPageView: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        HeroImage.isUserInteractionEnabled = true
         productPageViewModel.delegate = self
         productPageViewModel.fetchImage(imageURL: self.imageURL ?? "")
+    }
+    
+    
+    // MARK: - Actions
+
+    @IBAction func didTapImageView(_ sender: UITapGestureRecognizer) {
+        let storefront = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "collectionView") as! StorefrontCollectionView
+        
+        self.navigationController?.pushViewController(storefront, animated: true)
     }
 }
 

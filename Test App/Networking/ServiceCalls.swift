@@ -74,4 +74,29 @@ class ServiceCalls {
         
         dataTask?.resume()
     }
+    
+    func getImageData(url: URL, completion: @escaping ImageResult){
+        dataTask?.cancel()
+        
+        dataTask = defaultSession.dataTask(with: url) { [weak self] data, response, error in
+            defer {
+                self?.dataTask = nil
+            }
+            
+            if let error = error {
+                print(error.localizedDescription)
+            } else if
+                let data = data,
+                let response = response as? HTTPURLResponse,
+                response.statusCode == 200 {
+                
+                DispatchQueue.main.async {
+                    completion(data)
+                }
+            }
+            
+        }
+        
+        dataTask?.resume()
+    }
 }
