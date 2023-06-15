@@ -15,8 +15,4 @@ struct ProfileModel: Codable {
         case profileID = "avatar_url"
         case picture = "id"
     }
-//    init(profileID: String, picture: URL?) {
-//        self.profileID = profileID
-//        self.picture = picture
-//    }
 }

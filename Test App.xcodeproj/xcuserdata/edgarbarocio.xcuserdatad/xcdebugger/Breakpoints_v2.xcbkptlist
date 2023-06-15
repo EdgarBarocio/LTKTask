@@ -3,4 +3,54 @@
    uuid = "1B2FC437-1FAC-40CD-8639-E85B28929E98"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6D1DCC7A-CB06-4CB5-AE7A-86D2C637344D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Test App/Pages/ProductPageView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "returnImageData(imageData:)"
+            landmarkType = "9">
+            <Locations>
+               <Location
+                  uuid = "6D1DCC7A-CB06-4CB5-AE7A-86D2C637344D - 83fb99376811b064"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Test_App.ProductPageView.returnImageData(imageData: Foundation.Data) -&gt; ()"
+                  moduleName = "Test App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgarbarocio/LTKTask/Test%20App/Pages/ProductPageView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "25"
+                  endingLineNumber = "25"
+                  offsetFromSymbolStart = "60">
+               </Location>
+               <Location
+                  uuid = "6D1DCC7A-CB06-4CB5-AE7A-86D2C637344D - 83fb99376811b022"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Test_App.ProductPageView.returnImageData(imageData: Foundation.Data) -&gt; ()"
+                  moduleName = "Test App"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/edgarbarocio/LTKTask/Test%20App/Pages/ProductPageView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "27"
+                  endingLineNumber = "27"
+                  offsetFromSymbolStart = "60">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

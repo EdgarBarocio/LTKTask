@@ -17,9 +17,4 @@ struct ImagesModel: Codable {
         case profileID = "profile_id"
         case productIDs = "product_ids"
     }
-//    init(heroImage: String, profileID: String, productIDs: [String]) {
-//        self.heroImage = heroImage
-//        self.profileID = profileID
-//        self.productIDs = productIDs
-//    }
 }

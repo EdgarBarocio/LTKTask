@@ -10,6 +10,7 @@ import Foundation
 class FlipPageViewModel {
     
     private var serviceCalls = ServiceCalls()
+    weak var delegate: (DataParseResultsDelegate)?
     
     func fetchLTKData(serviceURL: String) {
         
@@ -26,7 +27,8 @@ class FlipPageViewModel {
         
         do {
             let decoded = try decoder.decode(BaseDataModel.self, from: data)
-            print(decoded)
+            
+            delegate?.buildViewControllerPages(dataModel: decoded)
         } catch {
             print("Failed to decode JSON")
         }

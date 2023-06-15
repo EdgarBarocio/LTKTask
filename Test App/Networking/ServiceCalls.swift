@@ -16,6 +16,7 @@ class ServiceCalls {
     var dataTask: URLSessionDataTask?
     
     typealias ServiceResult = (Data) -> Void
+    typealias ImageResult = (Data) -> Void
     
     /**
      Service call to fetch all data for the Project
@@ -25,6 +26,31 @@ class ServiceCalls {
         - completion: Closure to pass result to View Model
      */
     func getLTKData(url: URL, completion: @escaping ServiceResult) {
+        dataTask?.cancel()
+        
+        dataTask = defaultSession.dataTask(with: url) { [weak self] data, response, error in
+            defer {
+                self?.dataTask = nil
+            }
+            
+            if let error = error {
+                print(error.localizedDescription)
+            } else if
+                let data = data,
+                let response = response as? HTTPURLResponse,
+                response.statusCode == 200 {
+                
+                DispatchQueue.main.async {
+                    completion(data)
+                }
+            }
+            
+        }
+        
+        dataTask?.resume()
+    }
+    
+    func getRAWdata(url: URL, completion: @escaping ImageResult) {
         dataTask?.cancel()
         
         dataTask = defaultSession.dataTask(with: url) { [weak self] data, response, error in
